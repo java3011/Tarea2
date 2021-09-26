@@ -1,0 +1,21 @@
+body {
+  background-color: #5e98c7;
+}
+
+body #titulo {
+  font-size: 40px;
+  color: maroon;
+}
+
+body #formulario {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: darkblue;
+  list-style: none;
+}
+
+body #formulario #pregunta {
+  font-size: 18px;
+  color: maroon;
+}
+/*# sourceMappingURL=boceto.css.map */
