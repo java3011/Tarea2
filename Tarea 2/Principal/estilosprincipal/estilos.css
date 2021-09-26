@@ -1,0 +1,59 @@
+body {
+  background-color: #4b691a;
+  color: mintcream;
+}
+
+body #subtitulo {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  color: #1e5305;
+}
+
+body #contacto {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: #000;
+}
+
+body #contacto #nombre {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  color: #551e1e;
+}
+
+body #contacto #apellido {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  color: #551e1e;
+}
+
+body #contacto #mail {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  color: #551e1e;
+}
+
+body #contacto #rut {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  color: #551e1e;
+}
+
+body #contacto #telefono {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  color: #551e1e;
+}
+
+body #contacto #text1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  color: #1e5305;
+}
+
+body #contacto #text2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  color: #1e5305;
+}
+/*# sourceMappingURL=estilos.css.map */

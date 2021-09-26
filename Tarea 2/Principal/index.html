@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Estilo SASS-->
+    <link rel="stylesheet" href="estilosprincipal/estilos.css">
+
+    <title>Tarea 2</title>
+</head>
+
+<body>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Barra de color Inicio Pagina-->
+    <header class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(98, 51, 207);"></header>
+    <!-- Fin barra de color Inicio Pagina -->
+
+    <!-- Primera Parte -->
+    <section class="container mt-3" style="font-family: 'Times New Roman', Times, serif;">
+        <h3 class="text-uppercase text-center">Formulario</h3>
+        <p class="lead text-center">Bienvenidos, por favor ingresa tus datos de contacto para ingresar al formulario</p>
+    </section>
+    <!-- Fin Primera Parte -->
+
+    <!-- Caja para Formulario -->
+    <div class="container mt-4" style="background-color: rgb(73, 182, 224);">
+        <div class="row mb-1">
+            <div class="col mt-4 mb-2">
+                <p class="text-center" id="subtitulo">Todos los campos son obligatorios</p>
+                <div class="p-2 mb-1 mt-3">
+                    <form class="row g-3 needs-validation" novalidate id="contacto">
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">Nombres</label>
+                            <input type="text" class="form-control" id="validationCustom01" required>
+                            <p id="nombre">Solo ingresar letras.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom02" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="validationCustom02" required>
+                            <p id="apellido">Solo ingresar letras.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustomUsername" class="form-label">Email</label>
+                            <div class="input-group has-validation">
+                                <label class="input-group-text" id="inputGroupPrepend">@</label>
+                                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                            </div>
+                            <p id="mail">Ingresar email.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Rut</label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <p id="rut">Rut sin numeros y con digito verificador.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom04" class="form-label">Teléfono Móvil</label>
+                            <input type="text" class="form-control" id="validationCustom04" required>
+                            <p id="telefono">Solo ingresar 9 numeros.</p>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Validar</button>
+                            <a href="Formulario/formulario.html" class="btn btn-primary" type="submit">Siguiente</a>
+                        </div>
+                        <h6 id="text1"><strong>Por favor apretar el boton "Validar"</strong></h6>
+                        <h6 id="text2"><strong>Una vez validado, por favor apretar boton "Siguiente" para ingresar al formulario</strong></h6>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Caja para Formulario -->
+
+    <!--Funcion para boton siguiente-->
+    <script>
+        (function() {
+            'use strict'
+
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms)
+                .forEach(function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        } else {
+                            alert('Continuar')
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+    <!--Fin Funcion para boton siguiente-->
+
+    <!-- Barra de color Final Página -->
+    <footer class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(98, 51, 207);" width="100"></footer>
+    <!-- Fin Barra de color Final Página -->
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(75, 105, 26);
+    color: mintcream;
+}
+
+body #subtitulo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: rgb(30, 83, 5)
+}
+
+body #contacto {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #000;
+    #nombre {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        color: rgb(85, 30, 30);
+    }
+    #apellido {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        color: rgb(85, 30, 30);
+    }
+    #mail {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        color: rgb(85, 30, 30);
+    }
+    #rut {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        color: rgb(85, 30, 30);
+    }
+    #telefono {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        color: rgb(85, 30, 30);
+    }
+    #text1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        color: rgb(30, 83, 5)
+    }
+    #text2 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        color: rgb(30, 83, 5)
+    }
+}
